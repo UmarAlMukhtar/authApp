@@ -5,7 +5,6 @@ const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const User = require("../models/User");
 const authMiddleware = require("../middleware/authMiddleware");
-const { findAllByAltText } = require("@testing-library/react");
 
 const createToken = (user) => {
   return jwt.sign(
