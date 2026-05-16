@@ -60,8 +60,8 @@ export default function AuthPage() {
           </p>
         )}
 
-        <button 
-          onClick={() => window.location.href = "/api/auth/google"}
+        <button
+          onClick={() => window.location.href = `${import.meta.env.VITE_API_URL}/api/auth/google`}
           className="w-full flex items-center justify-center gap-3 border border-gray-200 rounded-2xl py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 transition cursor-pointer mb-5"
         >
           <FcGoogle size={20}/>
